@@ -1,9 +1,12 @@
-print "введите ширину участка:"
-width = gets.chomp.to_i
-print "введите длину участка:"
-height = gets.chomp.to_i
+def get_number(what)
+  print "введите #{what} участка:"
+  gets.to_i
+end
+width = get_number("ширину")
+height = get_number("длину")
 $cost = 0
 $area = height * width
+
 def calculate costByM
   $cost = $area * costByM.to_i
 end
